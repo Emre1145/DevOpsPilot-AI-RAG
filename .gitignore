@@ -6,4 +6,31 @@ downloads/
 
 
 
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual Environment
+venv/
+.env
+
+# ChromaDB
+chroma_db/
+
+# Downloads
+downloads/
+
+# VS Code
+.vscode/
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+
 
